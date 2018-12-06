@@ -6,7 +6,8 @@
   "author": "Viktor Lukashov <viktor@vaadin.com>",
   "license": "MIT",
   "dependencies": {
-    "jest": "^23.6.0"
+    "jest": "^23.6.0",
+    "seedrandom": "^2.4.4"
   },
   "scripts": {
     "test": "jest"
