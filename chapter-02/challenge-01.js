@@ -14,12 +14,12 @@
  * the same argument, you should get the result immediately.
  */
 
-export function memoize(f) {
+function memoize(f) {
   if (typeof f !== 'function') {
     throw new TypeError('The first argument passed into memoize() is not a function');
   }
 
-  const cache = new WeakMap();
+  const cache = new Map();
   return function (...args) {
     const hash = hashCode(args);
     if (!cache.has(hash)) {
@@ -47,3 +47,5 @@ function hashCode(args) {
   // FIXME: implemt a better hashing strategy
   return JSON.stringify(args);
 }
+
+module.exports = memoize;
