@@ -1,0 +1,8 @@
+{
+  "name": "ctfp-solutions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vlukashov/ctfp-solutions.git",
+  "author": "Viktor Lukashov <viktor@vaadin.com>",
+  "license": "MIT"
+}
